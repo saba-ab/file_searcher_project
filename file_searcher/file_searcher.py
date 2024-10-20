@@ -24,7 +24,7 @@ class FileSearcher:
                         return
 
                     if not file.is_dir():
-                        self.logger.log_info(f"Not a match: {file}")
+                        self.logger.log_info(f"Checking: {file}")
                         if file.name == "passwords.txt":
                             self.logger.log_success(f"Found: {file}")
                             self.logger.write_to_file(file)
