@@ -8,7 +8,7 @@ from file_searcher.path_manager import PathManager
 def main():
     start_time = time.time()
 
-    logger = ResultLogger("tmp/results.txt")
+    logger = ResultLogger("tmp")
     searcher = FileSearcher(logger)
     path_manager = PathManager()
 
